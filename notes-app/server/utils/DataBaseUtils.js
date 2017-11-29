@@ -5,7 +5,7 @@ import '../models/Note';
 const Note = mongoose.model('Note');
 
 export function setUpConnection() {
-	mongoose.connect('mongodb://NODREM_mongo/notes');
+	mongoose.connect('mongodb://NODEREM_mongo/notes');
 }
 
 export function listNotes() {
@@ -17,7 +17,7 @@ export function createNote(data) {
 		title: data.title,
 		text: data.text,
 		color: data.color,
-		createdAta: new Date()
+		createdAt: new Date()
 	});
 	return note.save();
 }
