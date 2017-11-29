@@ -1,0 +1,1 @@
+docker run -p 8090:8090 -p 8080:8080 --name NODEREM -v C:\Users\ptflp\Documents\GitHub\nodejs-react-express-mongo\notes-app:/home/app --network skynet node tail -f /dev/null
