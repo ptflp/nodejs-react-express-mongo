@@ -12,9 +12,15 @@
 
 	<script type="text/babel">
 		const HelloWorld = React.createClass({
+			getInitialState() {
+				return {
+				name: 'Vasya'
+				};
+			},
+
 			render() {
 				return (
-					<h1> Hello {this.props.name}! </h1>
+					<h1> Hello {this.state.name}! </h1>
 				);
 			}
 		});
