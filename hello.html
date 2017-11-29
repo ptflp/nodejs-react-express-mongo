@@ -17,10 +17,15 @@
 				name: 'Vasya'
 				};
 			},
-
+			handleNameChange(e){
+				console.log(e);
+			},
 			render() {
 				return (
-					<h1> Hello {this.props.name}! </h1>
+					<div>
+						<h1> Hello {this.state.name}! </h1>
+						<input type="text" value={this.state.name} onChange={this.handleNameChange}/> 
+					</div>
 				);
 			}
 		});
